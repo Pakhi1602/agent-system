@@ -5,7 +5,7 @@ from app.mcp_client import mcp_client
 @pytest.fixture(autouse=True)
 async def reset_mcp_client():
     """
-    Reset the MCP client before each test so a fresh httpx.AsyncClient
+    Reset the MCP client before each test so a fresh httpx.AsyncClien
     is created bound to the current test's event loop.
     Prevents 'Event loop is closed' errors across test cases.
     """
